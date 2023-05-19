@@ -36,5 +36,9 @@
     <symbol id="close-light" viewBox="0 0 24 24">
         <path d="M18 6 6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <!-- Checked -->
+    <symbol id="checked" viewBox="0 0 8 8">
+        <path d="M18 6 6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
   </defs>
 </svg>
