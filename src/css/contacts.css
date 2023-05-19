@@ -71,8 +71,12 @@ line-height: 18px;
 letter-spacing: -0.04em;
 color:var(--white);
 opacity: 0.5;
+background-color: var(--dark-red);
+border: none;
+margin-left: 24px;
 }
 .button-send{
+border: none;
 padding: 15px 35px;
 background: #9DC162;
 border-radius: 100px;
