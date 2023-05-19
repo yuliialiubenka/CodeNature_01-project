@@ -1,0 +1,61 @@
+.fruits__section {
+}
+
+.fruits-box {
+  width: 624px;
+  margin-bottom: 44px;
+}
+
+.fruits-titel {
+  margin-bottom: 14px;
+}
+.fruits-description {
+  width: 547px;
+}
+.fruits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--indent);
+}
+
+.fruits-item {
+  width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  padding: 64px 24px 24px;
+  margin: 0;
+
+  outline: 2px solid blue;
+}
+.fruits-item-strawberry {
+  background-color: #f8766b;
+}
+.fruits-item-name {
+  margin-bottom: 7px;
+}
+.fruits-item-plant {
+  margin-bottom: 4px;
+}
+
+/* .fruits-image-container {
+} */
+.fruits-item-img {
+  margin: auto;
+}
+.fruits-item-price {
+  width: 136px;
+  padding: 12px 0;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ae1332;
+  background-color: #ffffff;
+  border-radius: 200px;
+}
+.notmobile-fruits-item {
+}
+.nottabl-fruits-item {
+}
+.fruits-btn {
+}
