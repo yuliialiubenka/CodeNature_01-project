@@ -18,11 +18,8 @@
  .contacts-img-wrapper {
     position: relative;
     display: flex;
-<<<<<<< Updated upstream
     align-items: flex-start;
-=======
     align-items: flex-start;    
->>>>>>> Stashed changes
     gap: 16px;
     z-index: 10 ;
     margin-bottom: 80px;
