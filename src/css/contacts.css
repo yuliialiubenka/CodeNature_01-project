@@ -7,22 +7,18 @@
     position: relative;
     z-index: 100;
     font-weight: 500;
-    /* font-size: 64px; */
     font-size: 32px;
-    /* line-height: 1; */
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     margin: 0 auto -37px auto;
-    /* max-width: 780px; */
     max-width: 335px;
 }
  .contacts-img-wrapper {
     position: relative;
     display: flex;
     align-items: flex-start;
-    /* gap: 24px; */
     gap: 16px;
     z-index: 10 ;
     margin-bottom: 80px;
