@@ -76,7 +76,7 @@ h1 {
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 /* Mobile styles */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 h1 {
    max-width: 335px;
    margin-bottom: 386px;
@@ -84,7 +84,7 @@ h1 {
   }
 }
 /* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 h1 {
    max-width: 704px;
    margin-bottom: 513px;
@@ -93,7 +93,7 @@ h1 {
   }
 }
 /* Desctop styles */
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
 h1 {
    max-width: 898px;
    margin-bottom: 483px;
@@ -101,6 +101,7 @@ h1 {
 }
 
 h2 {
+  max-width: 624px;
   font-size: 40px;
   line-height: 1.1;
   text-align: center;
@@ -108,7 +109,7 @@ h2 {
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 /* Mobile styles */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 h2 {
    max-width: 210px;
    font-size: 28px;
@@ -116,33 +117,27 @@ h2 {
   }
 }
 /* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 h2 {
    max-width: 624px;
    line-height: 1.08;
   }
 }
-/* Desctop styles */
-@media only screen and (min-width: 1280px) {
-h2 {
-   max-width: 624px; 
-    }
-  }
 
 /* Mobile styles */
-@media only screen and (min-width: 375px) {
+@media screen and (min-width: 375px) {
   .section {
      padding-bottom: 80px;
     }
   }
 /* Tablet styles */
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
   .section {
      padding-bottom: 144px;
     }
   }
 /* Desctop styles */
-  @media only screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
   .section {
      padding-bottom: 150px;
     }
@@ -156,14 +151,14 @@ h2 {
     padding: 0px 32px;
 }
 /* Tablet styles */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     
   }
 }
 /* Desctop styles */
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .container {
     max-width: 1200px;
   }
