@@ -12,7 +12,6 @@
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
-  letter-spacing: -0.04em;
   text-transform: uppercase;
   text-align: center;
 
@@ -54,7 +53,7 @@
 }
 .hero-border-img {
   position: relative;
-  top: -69px;
+  top: -71px;
   margin: 0 auto;
   padding-top: 12px;
 
@@ -94,21 +93,7 @@
 }
 .hero-img-girl {
 }
-.hero-link-wrraper {
-  position: relative;
-  top: -40px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-
-  width: 80px;
-  height: 80px;
-
-  border-radius: 50%;
-  background-color: var(--white);
-}
 .hero-btn {
   position: relative;
   top: -40px;
@@ -136,24 +121,80 @@
   color: var(--light-green);
 }
 .hero-text {
+  max-width: 279px;
+  margin: 0 auto 44px auto;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-card {
+  width: 249px;
+  padding: 28px 24px 40px 24px;
+  margin: 0 auto 44px auto;
+
+  border-radius: 500px;
+  background-color: var(--light-green);
+}
+.hero-card-strawberry {
+  margin-bottom: 0;
+  padding-left: 44px;
+  padding-right: 44px;
+
+  background-color: var(--yellow);
+}
+.hero-card-title,
+.hero-card-text {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-card-title {
+  margin-bottom: 61px;
 }
+.hero-card-title-strawberry {
+  margin-bottom: 18px;
+}
+
 .hero-card-thumb-img-watermelon {
+  margin-bottom: 2px;
 }
 .hero-img-watermelon {
 }
 .hero-card-text {
+  max-width: 153px;
+  margin: 0 auto;
+
+  text-transform: uppercase;
+}
+.hero-card-text-strawberry {
+  max-width: 163px;
 }
 .hero-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 44px;
 }
 .hero-item {
+flex-basis: calc(100% / 2 - 8px);
 }
 .hero-item-title {
+padding: 12px 32px;
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.17;
+	text-transform: uppercase;
+	text-align: center;
+ 
+	border: 1px solid var(--white);
+	border-radius: 1000px;
+	text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-card-thumb-img-strawberry {
+  margin-bottom: 17px;
 }
 .hero-img-strawberry {
 }
