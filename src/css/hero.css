@@ -1,0 +1,159 @@
+.hero__section {
+  padding-top: 56px;
+}
+.hero-container {
+}
+.hero-wrraper-title-img {
+}
+.hero-title {
+  position: relative;
+  max-width: 335px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+@media only screen and (max-width: 335px) {
+  .hero-title {
+    font-size: 26px;
+  }
+}
+.hero-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  display: block;
+  width: 80px;
+  height: 64px;
+  background-image: url(../img/hero/bananas_@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.hero-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/hero/strawberry-bg_@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.hero-border-img {
+  position: relative;
+  top: -69px;
+  margin: 0 auto;
+  padding-top: 12px;
+
+  max-width: 335px;
+  max-height: 509px;
+
+  border-radius: 500px;
+  background-color: var(--dark-red);
+}
+@media only screen and (max-width: 374px) {
+  .hero-border-img::before {
+    display: none;
+  }
+}
+.hero-border-img::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-radius: 500px;
+  background: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    #ffffff71 30.64%,
+    #ffffff00 76.92%
+  );
+  z-index: -1;
+}
+.hero-thumb-img {
+  max-width: 311px;
+  margin: 0 auto;
+
+  border-radius: 500px;
+  overflow: hidden;
+}
+.hero-img-girl {
+}
+.hero-link-wrraper {
+  position: relative;
+  top: -40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  background-color: var(--white);
+}
+.hero-btn {
+  position: relative;
+  top: -40px;
+  display: flex;
+  align-items: center;
+
+  padding: 14px 8px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--dark-red);
+  background-color: var(--white);
+  transition: color 250ms linear;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--light-green);
+}
+.hero-text {
+}
+.hero-card {
+}
+.hero-card-title {
+}
+.hero-card-thumb-img-watermelon {
+}
+.hero-img-watermelon {
+}
+.hero-card-text {
+}
+.hero-items {
+}
+.hero-item {
+}
+.hero-item-title {
+}
+.hero-card-thumb-img-strawberry {
+}
+.hero-img-strawberry {
+}
