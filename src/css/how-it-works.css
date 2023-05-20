@@ -132,7 +132,7 @@
   }
 }
 
-/* Desctop styles */
+/* Desktop styles */
 @media only screen and (min-width: 1280px) {
   .how-it-works__section-list {
     flex-direction: row;
