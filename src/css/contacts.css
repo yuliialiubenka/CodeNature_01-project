@@ -1,18 +1,15 @@
 /* Contacts-section */
-.contacts__section{
+.contacts__section {
     margin-bottom: 152px;
 }
-.container{
+.container {
     width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 32px;
     padding-right: 32px;
 }
- .div-contacts{
-    margin-bottom: 90px;
- }
-.contacts-title{
+.contacts-title {
     position: relative;
     z-index: 100;
     font-weight: 500;
@@ -24,7 +21,7 @@
     margin: 0 auto -37px auto;
     max-width: 780px;
 }
- .contacts-img-wrapper{
+ .contacts-img-wrapper {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -33,25 +30,27 @@
     margin-bottom: 80px;
  }
 
-.contacts-form-wrapper{
+.contacts-form-wrapper {
     width: 492px;
     align-items: center;
     padding: 0px;
     gap: 80px;
     margin: auto;
 }
-.contacts-form-info{
+
+.contacts-form-info {
     text-align: center;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     margin-bottom: 80px;
-
 }
-.contacts-form{
+
+.contacts-form {
     max-width: 292px;
     margin: auto;
     position: relative;
 }
-.contacts-form-input{
+
+.contacts-form-input {
     background: transparent;
     border:1px solid rgba(255, 255, 255, 0.3) ;
     border-radius: 100px;
@@ -59,21 +58,35 @@
     padding: 15px 24px;
     outline: none;
     width: 292px;
+    line-height: inherit;
 }
-.contacts-form-input::placeholder{
+
+.contacts-form-input::placeholder {
     opacity: 0.5;
 }
-.contacts-form-btn{
+.contacts-form-btn {
     border: none;
     padding: 15px 35px;
-    background: #9DC162;
+    background:var(--light-green);
     border-radius: 100px;
     color: var(--white);
     position: absolute;
     right: 0;
     cursor: pointer;
+    line-height: inherit;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:1px solid var(--light-green) ;
 }
-.contacts-text-btn{
+
+.contacts-form-btn:hover,
+.contacts-form-btn:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25)) drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    background: var(--yellow-green-hover);
+    border: 1px solid var(--yellow-green-hover);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-text-btn {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
