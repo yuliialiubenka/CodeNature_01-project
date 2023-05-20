@@ -12,6 +12,7 @@
 @import url('./footer.css');
 @import url('./your-order.css');
 @import url('./thank-you.css');
+@import url('./go-top.css');
 
 :root {
   --black: #000000;
