@@ -1,5 +1,5 @@
 <section class="fruits__section">
-  <div class="fruits-box">
+  <div class="container">
     <h2 class="fruits-titel">ORGANIC FRUITS</h2>
     <p class="fruits-description">
       Our organic fruits are hand-picked from local farms and delivered straight
@@ -7,233 +7,454 @@
       produce possible. We offer a wide selection of organic fruits grown
       without the use of harmful pesticides or chemicals.
     </p>
+    <ul class="fruits-list">
+      <li class="fruits-item fruits-item-strawberry">
+        <h3 class="fruits-item-name">Strawberry</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-1-desc@1x.webp 1x,
+              ./img/fruits/frame-1-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-1-desc@1x.png 1x,
+              ./img/fruits/frame-1-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-1-mob@1x.webp 1x,
+              ./img/fruits/frame-1-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-1-mob@1x.png 1x,
+              ./img/fruits/frame-1-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-1-desc@1x.png"
+            alt="strawberry image shown"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">100 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-banana">
+        <h3 class="fruits-item-name">Banana</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-2-desc@1x.webp 1x,
+              ./img/fruits/frame-2-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-2-desc@1x.png 1x,
+              ./img/fruits/frame-2-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-2-mob@1x.webp 1x,
+              ./img/fruits/frame-2-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-2-mob@1x.png 1x,
+              ./img/fruits/frame-2-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-2-desc@1x.png"
+            alt="strawberry image shown"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">80 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-watermelon">
+        <h3 class="fruits-item-name">Watermelon</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-3-desc@1x.webp 1x,
+              ./img/fruits/frame-3-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-3-desc@1x.png 1x,
+              ./img/fruits/frame-3-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-3-mob@1x.webp 1x,
+              ./img/fruits/frame-3-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-3-mob@1x.png 1x,
+              ./img/fruits/frame-3-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-3-desc@1x.png"
+            alt="shown picture of watermelon"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">40 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-lime">
+        <h3 class="fruits-item-name">Lime</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-4-desc@1x.webp 1x,
+              ./img/fruits/frame-4-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-4-desc@1x.png 1x,
+              ./img/fruits/frame-4-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-4-mob@1x.webp 1x,
+              ./img/fruits/frame-4-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-4-mob@1x.png 1x,
+              ./img/fruits/frame-4-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-4-desc@1x.png"
+            alt="lime picture shown"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">60 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-apple">
+        <h3 class="fruits-item-name">Apple</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-5-desc@1x.webp 1x,
+              ./img/fruits/frame-5-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-5-desc@1x.png 1x,
+              ./img/fruits/frame-5-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-5-mob@1x.webp 1x,
+              ./img/fruits/frame-5-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-5-mob@1x.png 1x,
+              ./img/fruits/frame-5-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-5-desc@1x.png"
+            alt="apple image shown"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">50 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-peach">
+        <h3 class="fruits-item-name">Peach</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-6-desc@1x.webp 1x,
+              ./img/fruits/frame-6-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-6-desc@1x.png 1x,
+              ./img/fruits/frame-6-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-6-mob@1x.webp 1x,
+              ./img/fruits/frame-6-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-6-mob@1x.png 1x,
+              ./img/fruits/frame-6-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-6-desc@1x.png"
+            alt="showing image of peach"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">80 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-plums">
+        <h3 class="fruits-item-name">Plums</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-7-desc@1x.webp 1x,
+              ./img/fruits/frame-7-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-7-desc@1x.png 1x,
+              ./img/fruits/frame-7-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-7-mob@1x.webp 1x,
+              ./img/fruits/frame-7-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-7-mob@1x.png 1x,
+              ./img/fruits/frame-7-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-7-desc@1x.png"
+            alt="shown picture of plums"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">40 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-orange">
+        <h3 class="fruits-item-name">Orange</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-8-desc@1x.webp 1x,
+              ./img/fruits/frame-8-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-8-desc@1x.png 1x,
+              ./img/fruits/frame-8-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-8-mob@1x.webp 1x,
+              ./img/fruits/frame-8-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-8-mob@1x.png 1x,
+              ./img/fruits/frame-8-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-8-desc@1x.png"
+            alt="shown picture of watermelon"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">60 UAH / kg</p>
+      </li>
+      <li class="fruits-item fruits-item-kiwi">
+        <h3 class="fruits-item-name">Kiwi</h3>
+        <p class="fruits-item-plant">Plant</p>
+        <picture>
+          <!-- Desktop and  Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/fruits/frame-9-desc@1x.webp 1x,
+              ./img/fruits/frame-9-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/fruits/frame-9-desc@1x.png 1x,
+              ./img/fruits/frame-9-desc@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-9-mob@1x.webp 1x,
+              ./img/fruits/frame-9-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./img/fruits/frame-9-mob@1x.png 1x,
+              ./img/fruits/frame-9-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="fruits-item-img"
+            src="./img/fruits/frame-9-desc@1x.png"
+            alt="showing image of kiwi"
+            width="295"
+            height="275"
+            loading="lazy"
+          />
+        </picture>
+        <p class="fruits-item-price">90 UAH / kg</p>
+      </li>
+    </ul>
+    <button class="fruits-btn" type="button">
+      <svg class="fruits-btn-icon" width="14" height="14">
+        <use href="../img/icons.svg#arrow"></use>
+      </svg>
+      ORDER
+    </button>
   </div>
-  <ul class="fruits-list">
-    <li class="fruits-item fruits-item-strawberry">
-      <h3 class="fruits-item-name">Strawberry</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <picture>
-        <!-- Desktop and  Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./img/fruits/frame-1-desc@1x.webp 1x,
-            ./img/fruits/frame-1-desc@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ./img/fruits/frame-1-desc@1x.png 1x,
-            ./img/fruits/frame-1-desc@2x.png 2x
-          "
-          type="image/png"
-        />
-
-        <!-- Mobile screen -->
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            ./img/fruits/frame-1-mob@1x.webp 1x,
-            ./img/fruits/frame-1-mob@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            ./img/fruits/frame-1-mob@1x.png 1x,
-            ./img/fruits/frame-1-mob@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img
-          class="fruits-item-img"
-          src="./img/fruits/frame-1-desc@1x.png"
-          alt="strawberry image shown"
-          width="295"
-          height="275"
-          loading="lazy"
-        />
-      </picture>
-
-      <p class="fruits-item-price">100 UAH / kg</p>
-    </li>
-    <li class="fruits-item">
-      <h3 class="fruits-item-name">Banana</h3>
-      <p class="fruits-item-plant">Plant</p>
-
-      <picture>
-        <!-- Desktop and  Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./img/fruits/frame-2-desc@1x.webp 1x,
-            ./img/fruits/frame-2-desc@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ./img/fruits/frame-2-desc@1x.png 1x,
-            ./img/fruits/frame-2-desc@2x.png 2x
-          "
-          type="image/png"
-        />
-
-        <!-- Mobile screen -->
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            ./img/fruits/frame-2-mob@1x.webp 1x,
-            ./img/fruits/frame-2-mob@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            ./img/fruits/frame-2-mob@1x.png 1x,
-            ./img/fruits/frame-2-mob@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img
-          class="fruits-item-img"
-          src="./img/fruits/frame-2-desc@1x.png"
-          alt="strawberry image shown"
-          width="295"
-          height="275"
-          loading="lazy"
-        />
-      </picture>
-
-      <p class="fruits-item-price">80 UAH / kg</p>
-    </li>
-    <li class="fruits-item">
-      <h3 class="fruits-item-name">Watermelon</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <picture>
-        <!-- Desktop and  Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./img/fruits/frame-3-desc@1x.webp 1x,
-            ./img/fruits/frame-3-desc@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ./img/fruits/frame-3-desc@1x.png 1x,
-            ./img/fruits/frame-3-desc@2x.png 2x
-          "
-          type="image/png"
-        />
-
-        <!-- Mobile screen -->
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            ./img/fruits/frame-3-mob@1x.webp 1x,
-            ./img/fruits/frame-3-mob@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            ./img/fruits/frame-3-mob@1x.png 1x,
-            ./img/fruits/frame-3-mob@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img
-          class="fruits-item-img"
-          src="./img/fruits/frame-3-desc@1x.png"
-          alt="shown picture of watermelon"
-          width="295"
-          height="275"
-          loading="lazy"
-        />
-      </picture>
-      <p class="fruits-item-price">40 UAH / kg</p>
-    </li>
-    <li class="fruits-item">
-      <img
-        class="fruits-item-img"
-        src="./img/fruits/Frame-62desc@1x.png"
-        width="295"
-        height="275"
-        alt="lime picture shown"
-      />
-      <h3 class="fruits-item-name">Lime</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <p class="fruits-item-price">60 UAH / kg</p>
-    </li>
-    <li class="fruits-item">
-      <img
-        class="fruits-item-img"
-        src="./img/fruits/Frame-62desc@1x.png"
-        width="295"
-        height="275"
-        alt="apple image shown"
-      />
-      <h3 class="fruits-item-name">Apple</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <p class="fruits-item-price">50 UAH / kg</p>
-    </li>
-    <li class="fruits-item">
-      <img
-        class="fruits-item-img"
-        src="./img/fruits/Frame-62desc@1x.png"
-        width="295"
-        height="275"
-        alt="showing image of peach"
-      />
-      <h3 class="fruits-item-name">Peach</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <p class="fruits-item-price">80 UAH / kg</p>
-    </li>
-    <li class="fruits-item notmobile-fruits-item">
-      <img
-        class="fruits-item-img"
-        src="./img/fruits/Frame-62desc@1x.png"
-        width="295"
-        height="275"
-        alt="shown picture of plums"
-      />
-      <h3 class="fruits-item-name">Plums</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <p class="fruits-item-price">40 UAH / kg</p>
-    </li>
-    <li class="fruits-item notmobile-fruits-item">
-      <img
-        class="fruits-item-img"
-        src="./img/fruits/Frame-62desc@1x.png"
-        width="295"
-        height="275"
-        alt="showing an image of an orange"
-      />
-      <h3 class="fruits-item-name">Orange</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <p class="fruits-item-price">60 UAH / kg</p>
-    </li>
-    <li class="fruits-item nottabl-fruits-item notmobile-fruits-item">
-      <img
-        class="fruits-item-img"
-        src="./img/fruits/Frame-62desc@1x.png"
-        width="295"
-        height="275"
-        alt="showing image of kiwi"
-      />
-      <h3 class="fruits-item-name">Kiwi</h3>
-      <p class="fruits-item-plant">Plant</p>
-      <p class="fruits-item-price">90 UAH / kg</p>
-    </li>
-  </ul>
-  <button class="fruits-btn" type="button">ORDER</button>
 </section>
