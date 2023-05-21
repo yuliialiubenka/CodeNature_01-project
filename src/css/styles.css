@@ -119,7 +119,7 @@ h2 {
 }
 
 /* Desctop styles */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .section {
     padding-bottom: 150px;
   }
