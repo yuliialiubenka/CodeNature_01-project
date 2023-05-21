@@ -1,6 +1,11 @@
 .hero__section {
   padding-top: 56px;
 }
+@media only screen and (min-width: 768px) {
+   .hero__section{
+	 padding-top: 64px;
+  }
+}
 .hero-container {
 }
 .hero-wrraper-title-img {
@@ -17,6 +22,13 @@
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+	max-width: 704px;
+	font-size: 49px;
+	line-height: 1.08;
+  }
 }
 @media only screen and (max-width: 335px) {
   .hero-title {
@@ -37,6 +49,14 @@
   background-position: center;
   z-index: -1;
 }
+@media only screen and (min-width: 768px) {
+   .hero-title::before{
+	 width: 148px;
+	 height: 119px;
+	 left: -10px;
+	 transform: translateY(50%);
+  }
+}
 .hero-title::after {
   content: '';
   position: absolute;
@@ -51,6 +71,14 @@
   background-position: center;
   z-index: -1;
 }
+@media only screen and (min-width: 768px) {
+   .hero-title::after{
+	 width: 108px;
+	 height: 108px;
+	 top: -9px;
+	 
+  }
+}
 .hero-border-img {
   position: relative;
   top: -71px;
@@ -62,6 +90,14 @@
 
   border-radius: 500px;
   background-color: var(--dark-red);
+}
+@media only screen and (min-width: 768px) {
+	.hero-border-img {
+		top: -122px;
+		padding-top: 20px;
+		max-width: 486px;
+		max-height: 742px;
+  }
 }
 @media only screen and (max-width: 374px) {
   .hero-border-img::before {
@@ -90,6 +126,11 @@
 
   border-radius: 500px;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+	.hero-thumb-img {
+		max-width: 452px;
+  }
 }
 .hero-img-girl {
 }
@@ -120,6 +161,20 @@
 .hero-btn:focus {
   color: var(--light-green);
 }
+@media only screen and (min-width: 768px) {
+  .hero-wrraper-cards {
+	 display: flex;
+	 gap: 142px;
+	 margin-top: -63px;
+  }
+}
+@media only screen and (min-width: 768px) {
+   .hero-wrraper-strawberry{
+	 display: flex;
+	 flex-direction: column;
+  }
+}
+
 .hero-text {
   max-width: 279px;
   margin: 0 auto 44px auto;
@@ -134,12 +189,23 @@
   border-radius: 500px;
   background-color: var(--light-green);
 }
+@media only screen and (min-width: 768px) {
+	.hero-card {
+		margin: 0 0 0 auto;
+  }
+}
 .hero-card-strawberry {
   margin-bottom: 0;
   padding-left: 44px;
   padding-right: 44px;
 
   background-color: var(--yellow);
+}
+@media only screen and (min-width: 768px) {
+	.hero-card-strawberry  {
+	 margin-bottom: 44px;
+	 order: 1;
+  }
 }
 .hero-card-title,
 .hero-card-text {
@@ -195,6 +261,13 @@
 
   margin-bottom: 44px;
 }
+@media only screen and (min-width: 768px) {
+   .hero-items {
+	 max-width: 266px;
+	 margin-bottom: 0;
+	 order: 2;
+  }
+}
 .hero-item {
   flex-basis: calc(100% / 2 - 8px);
 }
@@ -215,6 +288,7 @@
 	position: relative;
   margin-bottom: 17px;
 }
+
 .hero-card-thumb-img-strawberry::after{
 	left: -33px;
 	bottom: 2px;
