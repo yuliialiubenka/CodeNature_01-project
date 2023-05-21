@@ -1,0 +1,200 @@
+.hero__section {
+  padding-top: 56px;
+}
+.hero-container {
+}
+.hero-wrraper-title-img {
+}
+.hero-title {
+  position: relative;
+  max-width: 335px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+@media only screen and (max-width: 335px) {
+  .hero-title {
+    font-size: 26px;
+  }
+}
+.hero-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  display: block;
+  width: 80px;
+  height: 64px;
+  background-image: url(../img/hero/bananas_@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.hero-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/hero/strawberry-bg_@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.hero-border-img {
+  position: relative;
+  top: -71px;
+  margin: 0 auto;
+  padding-top: 12px;
+
+  max-width: 335px;
+  max-height: 509px;
+
+  border-radius: 500px;
+  background-color: var(--dark-red);
+}
+@media only screen and (max-width: 374px) {
+  .hero-border-img::before {
+    display: none;
+  }
+}
+.hero-border-img::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-radius: 500px;
+  background: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    #ffffff71 30.64%,
+    #ffffff00 76.92%
+  );
+  z-index: -1;
+}
+.hero-thumb-img {
+  max-width: 311px;
+  margin: 0 auto;
+
+  border-radius: 500px;
+  overflow: hidden;
+}
+.hero-img-girl {
+}
+
+.hero-btn {
+  position: relative;
+  top: -40px;
+  display: flex;
+  align-items: center;
+
+  padding: 14px 8px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--dark-red);
+  background-color: var(--white);
+  transition: color 250ms linear;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--light-green);
+}
+.hero-text {
+  max-width: 279px;
+  margin: 0 auto 44px auto;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.hero-card {
+  width: 249px;
+  padding: 28px 24px 40px 24px;
+  margin: 0 auto 44px auto;
+
+  border-radius: 500px;
+  background-color: var(--light-green);
+}
+.hero-card-strawberry {
+  margin-bottom: 0;
+  padding-left: 44px;
+  padding-right: 44px;
+
+  background-color: var(--yellow);
+}
+.hero-card-title,
+.hero-card-text {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.hero-card-title {
+  margin-bottom: 61px;
+}
+.hero-card-title-strawberry {
+  margin-bottom: 18px;
+}
+
+.hero-card-thumb-img-watermelon {
+  margin-bottom: 2px;
+}
+.hero-img-watermelon {
+}
+.hero-card-text {
+  max-width: 153px;
+  margin: 0 auto;
+
+  text-transform: uppercase;
+}
+.hero-card-text-strawberry {
+  max-width: 163px;
+}
+.hero-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 44px;
+}
+.hero-item {
+flex-basis: calc(100% / 2 - 8px);
+}
+.hero-item-title {
+padding: 12px 32px;
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.17;
+	text-transform: uppercase;
+	text-align: center;
+ 
+	border: 1px solid var(--white);
+	border-radius: 1000px;
+	text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.hero-card-thumb-img-strawberry {
+  margin-bottom: 17px;
+}
+.hero-img-strawberry {
+}
