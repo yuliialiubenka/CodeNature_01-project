@@ -1,9 +1,59 @@
-<header class="header">
-  <div class="container">
+<header>
+  <div class="container header-container">
+
     <nav class="nav">
-      <ul class="nav-list">
-        <li>Header</li>
+      <ul class="nav-list list">
+        <li><a class="header-link link" href="../partials/how-it-works.html">How It Works</a></li>
+        <li><a class="header-link link" href="../partials/fruits.html">Fruits</a></li>
+        <li><a class="header-link link" href="../partials/contacts.html">Contacts</a></li>
       </ul>
     </nav>
+
+
+    <a class="header-logo logo link" href="#header"><svg class="logo-icon" width="16" height="16">
+        <use href="../img/icons.svg#logo-icon"></use>
+      </svg><span class="logo-text">fresh harvest box</span>
+    </a>
+
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+      <svg class="menu-toggle-icon" width="24" height="24">
+        <use href="../img/icons.svg#menu"></use>
+      </svg>
+    </button>
+
+
+    <button class="header-basket" type="button">
+      <svg class="header-basket-icon" width="28" height="28">
+        <use href="../img/icons.svg#basket-new"></use>
+      </svg>
+    </button>
+
   </div>
 </header>
+
+  <!--Mobile Menu-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-top">
+      <a class="header-logo logo link" href="#header"><svg class="logo-icon" width="16" height="16">
+          <use href="../img/icons.svg#logo-icon"></use>
+        </svg><span class="logo-text">fresh harvest box</span>
+      </a>
+      <button class="mobile-close-btn menu-toggle js-close-menu" type="button">
+        <svg class="mob-close-icon" width="24" height="24">
+          <use href="../img/icons.svg#close-dark"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-menu list">
+      <li><a href="../partials/how-it-works.html" class="mobile-link link">How It Works</a></li>
+      <li><a href="../partials/fruits.html" class="mobile-link link">Fruits</a></li>
+      <li><a href="../partials/contacts.html" class="mobile-link link">Contacts</a></li>
+      <li><button class="mobile-basket" data-modal-open type="button">
+            <svg class="mobile-basket-icon" width="28" height="28">
+              <use href="../img/icons.svg#basket-new"></use>
+            </svg>
+          </button>
+      </li>
+    </ul>
+  </div>
+
