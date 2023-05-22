@@ -4,28 +4,32 @@
       fresh harvest box <br />
       is your 0ne-stop place for a delicious fruit basket
     </h1>
-    <div class="hero-border-img">
-      <div class="hero-thumb-img">
-        <picture>
-          <source
-            srcset="
-              ./img/hero/girl_desc-tab@1x.jpg,
-              ./img/hero/girl_desc-tab@2x.jpg
-            "
-            media="(min-width: 768px)"
-            type="image/jpeg"
-          />
-          <img
-            class="hero-img-girl"
-            src="./img/hero/girl_mob@1x.jpg"
-            alt="girl"
-            width="452"
-          />
-        </picture>
+    <div class="hero-main-wrraper">
+      <div class="hero-border-img">
+        <div class="hero-thumb-img">
+          <picture>
+            <source
+              srcset="
+                ./img/hero/girl_desc-tab@1x.jpg 1x,
+                ./img/hero/girl_desc-tab@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <img
+              class="hero-img-girl"
+              srcset="
+                ./img/hero/girl_mob@1x.jpg 1x,
+                ./img/hero/girl_mob@2x.jpg 2x
+              "
+              src="./img/hero/girl_mob@1x.jpg"
+              alt="girl"
+              width="452"
+            />
+          </picture>
+        </div>
+        <a href="" class="hero-btn round-btn">shop now</a>
       </div>
-      <a href="" class="hero-btn round-btn">shop now</a>
-    </div>
-    <div class="hero-wrraper-cards">
       <div class="hero-wrraper-watermelon">
         <p class="hero-text">
           Our expertly curated fruit baskets are made with the freshest, highest
@@ -37,6 +41,10 @@
           <div class="hero-card-thumb-img-watermelon">
             <img
               class="hero-img-watermelon"
+              srcset="
+                ./img/hero/watermelon_@1x.png 1x,
+                ./img/hero/watermelon_@2x.png 2x
+              "
               src="./img/hero/watermelon_@1x.png"
               alt="watermelon"
               width="200"
@@ -69,6 +77,10 @@
           <div class="hero-card-thumb-img-strawberry">
             <img
               class="hero-img-strawberry"
+              srcset="
+                ./img/hero/strawberry-@1x.png 1x,
+                ./img/hero/strawberry-@2x.png 2x
+              "
               src="./img/hero/strawberry-@1x.png"
               alt="strawberry"
               width="162"
