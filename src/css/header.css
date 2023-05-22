@@ -1,3 +1,4 @@
+
 .header-container {
     height: 50px;
     align-items: center;
@@ -5,28 +6,20 @@
     background-color: var(--white);
 }
 
+.nav,
+.header-basket {
+    display: none;
+}
+
 .nav-list {
     display: flex;
     gap: 16px;
 }
 
-@media only screen and (max-width: 767px) {
-    .nav,
-    .header-basket {
-        display: none;
-    }
-}
-
 .nav {
     margin-right: 94px;
-
 }
 
-@media only screen and (min-width: 1280px) {
-    .nav {
-        margin-right: 322px;
-    }
-}
 
 .header-link {
     font-weight: 400;
@@ -35,12 +28,23 @@
     text-transform: capitalize;
     letter-spacing: -0.04em;
     color: var(--dark-red);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo {
+.header-logo {
     color: var(--dark-red);
     display: flex;
     gap: 8px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-logo:hover,
+.header-logo:focus {
+    color: var(--light-green);
 }
 
 .logo-text {
@@ -50,12 +54,6 @@
     margin: 16px 0;
     height: 18px;
     text-transform: uppercase;
-}
-
-@media only screen and (min-width: 320px) {
-    .logo {
-        margin-right: auto;
-    }
 }
 
 .logo-icon {
@@ -70,6 +68,12 @@
     background-color: transparent;
     color: var(--dark-red);
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.header-basket:hover,
+.header-basket:focus {
+    color: var(--light-green);
 }
 
 .header-basket-icon {
@@ -78,6 +82,30 @@
     fill: currentColor;
 
 }
+/*Mobie Styles*/
+
+@media only screen and (min-width: 320px) {
+    .logo {
+        margin-right: auto;
+    }
+}
+/*Tablet Styles*/
+
+@media only screen and (min-width: 768px) {
+    .nav,
+    .header-basket {
+        display: block;
+    }
+}
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 1280px) {
+    .nav {
+        margin-right: 322px;
+    }
+}
+
 /*Mobile Menu*/
 
 .menu-toggle {
@@ -95,27 +123,23 @@
     border: none;
     border-radius: 50%;
     outline: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    color: var(--light-green);
 }
 
 .menu-toggle-icon {
     fill: currentColor;
 }
 
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
-}
-
 .mob-close-icon {
     justify-content: center;
     align-items: center;
 
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
@@ -183,4 +207,12 @@
 
 .mobile-basket-icon {
     fill: currentColor;
+}
+
+/*Tablet and Desktop Styles*/
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
 }
