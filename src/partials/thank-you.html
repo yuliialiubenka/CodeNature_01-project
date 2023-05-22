@@ -1,3 +1,60 @@
-<div class="thank-you__modal">
+<div class="modal thank-you-modal" data-modal="1">
+  <button class="js-modal-close bnt-modal-close" type="button">
+    <svg class="close-icon" width="24" height="24">
+      <use href="./img/icons.svg#close-light"></use>
+    </svg>
+  </button>
 
+  <div class="thank-you-block-img">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/thank-you/img1-desktop@1x.webp 1x,
+          ./img/thank-you/img1-desktop@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/thank-you/img1-desktop@1x.png 1x,
+          ./img/thank-you/img1-desktop@2x.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width: 768px)"
+        srcset="
+          ./img/thank-you/img2-mobile@1x.webp 1x,
+          ./img/thank-you/img2-mobile@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 768px)"
+        srcset="
+          ./img/thank-you/img2-mobile@1x.png 1x,
+          ./img/thank-you/img2-mobile@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="thank-you-item-img"
+        src="./img/thank-you/img1-desktop@1x.png"
+        alt="strawberry image shown"
+        width="278"
+        height="239"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <h2 class="thank-you-modal-title">thank you</h2>
+  <p class="thank-you-modal-description">
+    Thank you for your order! Our team is preparing your box with fresh,
+    delicious fruits and vegetables, and we'll deliver it straight to your
+    doorstep. We appreciate your business and look forward to providing you with
+    the best possible experience!
+  </p>
 </div>
+<div class="overlay js-overlay-modal"></div>

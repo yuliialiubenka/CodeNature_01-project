@@ -1,27 +1,15 @@
 /* Contacts-section */
-.contacts__section {
-    margin-bottom: 152px;
-}
-
 .contacts-title {
     position: relative;
-    z-index: 100;
-    font-weight: 500;
+    z-index: 1;
     font-size: 32px;
-    line-height: 32px;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-    margin: 0 auto -37px auto;
+    margin: 0 auto -43px auto;
     max-width: 335px;
 }
  .contacts-img-wrapper {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    align-items: flex-start;    
-    gap: 16px;
-    z-index: 10 ;
     margin-bottom: 80px;
  }
 
@@ -37,7 +25,6 @@
     border-radius: 20px;
     margin: 0 10px;
     cursor: pointer;
-    color: #333;
     flex: 1;
     background-size: cover;
     background-position: center;
@@ -58,6 +45,7 @@
 }
 
 .contacts-form-wrapper {
+    display: none;
     width: 492px;
     align-items: center;
     padding: 0px;
@@ -113,42 +101,30 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-text-btn {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.04em;
-    text-transform: capitalize;
-    color: var(--white);
+/* Adaptive Site layout */
+
+@media only screen and (min-width: 768px) {
+    .slider-container {
+        display: flex;
+    }
+    .contacts-title {
+        font-size: 54px;
+        max-width: 668px;
+        margin: 0 auto -29px auto;
+    }
+    .contacts-mobile-slider {
+        display: none;
+    }
+    .contacts-form-wrapper {
+        display: block;
+    }
 }
 
-              /* Adaptive Site layout */
-
- @media only screen and (min-width: 768px) {
-  .slider-container {
-     display: flex;
-   }
-  .contacts-title {
-    font-size: 54px;
-    max-width: 668px;
-    margin: 0 auto -29px auto;
-  }
-  .contacts-mobile-slider {
-    display: none;
-  }
-  .contacts-form-wrapper {
-    display: block;
-  }
+@media only screen and (min-width: 1280px) {
+    .contacts-title{
+        font-size: 64px;
+        line-height: 1;
+        max-width: 780px;
+        margin: 0 auto -39px auto;
+    }
 }
-            
- @media only screen and (min-width: 1280px) {
-  .contacts-title{
-  font-size: 64px;
-  line-height: 1;
-  max-width: 780px;
-  margin: 0 auto -39px auto;
-   }
- }
-            
