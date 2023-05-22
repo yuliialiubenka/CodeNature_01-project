@@ -74,9 +74,12 @@ window.addEventListener('DOMContentLoaded', () => {
         openMenuBtn.style.display = 'none';
         closeMenuBtn.style.display = 'flex'; 
     }
+    function hideBothBtn() {
+        openMenuBtn.style.display = '';
+        closeMenuBtn.style.display = '';
+    }
     openMenuBtn.addEventListener('click', () => showCloseBtn());
     closeMenuBtn.addEventListener('click', () => hideCloseBtn());
-    
 
     // Close the mobile menu on wider screens if the device orientation changes
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -84,6 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('is-open');
       body.classList.remove('overflow-hidden');
       openMenuBtn.setAttribute('aria-expanded', false);
+      hideBothBtn();
     });
 
     // Modals
