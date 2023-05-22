@@ -10,34 +10,17 @@
 }
 
 .fruits-titel {
-  text-align: center;
   margin-bottom: 14px;
 
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1;
-
-  text-align: center;
   letter-spacing: -0.04em;
-  text-transform: uppercase;
 
   color: #ffffff;
-
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 .fruits-description {
   margin: auto;
   text-align: center;
-  /* max-width: 335px; */
   margin-bottom: 44px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #ffffff;
-
-  letter-spacing: -0.04em;
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
@@ -65,18 +48,11 @@
 
   font-weight: 700;
   font-size: 24px;
-  color: #ffffff;
   line-height: 1.67;
-
-  letter-spacing: -0.04em;
 }
 
 .fruits-item-plant {
   margin-bottom: 4px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.23;
 
   letter-spacing: -0.02em;
 }
@@ -147,19 +123,10 @@
   align-items: center;
 
   color: #ffffff;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
 
   background-color: #9dc262;
-  letter-spacing: -0.04em;
   text-transform: uppercase;
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  border: 0;
-  transform: rotate(-14deg);
 
   cursor: pointer;
 }
@@ -207,7 +174,6 @@
     width: 114px;
     height: 114px;
 
-    font-weight: 500;
     font-size: 18px;
     line-height: 1.33;
   }
