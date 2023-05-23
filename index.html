@@ -20,10 +20,14 @@
       rel="stylesheet"
       href=" https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>CodeNature</title>
     
-    <script type="module" crossorigin src="/CodeNature_01-project/assets/index-fc980bc2.js"></script>
-    <link rel="stylesheet" href="/CodeNature_01-project/assets/index-f6611566.css">
+    <script type="module" crossorigin src="/CodeNature_01-project/assets/index-8b59da00.js"></script>
+    <link rel="stylesheet" href="/CodeNature_01-project/assets/index-9775e850.css">
   </head>
   <body>
     <header class="header">
@@ -39,23 +43,23 @@
 
 
     <a class="header-logo logo link" href="#header"><svg class="logo-icon" width="16" height="16">
-        <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#logo-icon"></use>
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#logo-icon"></use>
       </svg><span class="logo-text">fresh harvest box</span>
     </a>
 
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
       <svg class="menu-toggle-icon" width="24" height="24">
-        <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#menu"></use>
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#menu"></use>
       </svg>
     </button>
     <button class="mobile-close-btn menu-toggle js-close-menu" type="button">
       <svg class="mob-close-icon" width="24" height="24">
-        <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#close-dark"></use>
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#close-dark"></use>
       </svg>
     </button>
     <button class="header-basket" type="button">
       <svg class="header-basket-icon" width="28" height="28">
-        <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#basket"></use>
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#basket"></use>
       </svg>
     </button>
   </div>
@@ -69,17 +73,12 @@
       <li><a href="#" class="mobile-link link">Contacts</a></li>
       <li><button class="mobile-basket" data-modal-open type="button">
             <svg class="mobile-basket-icon" width="28" height="28">
-              <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#basket"></use>
+              <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#basket"></use>
             </svg>
           </button>
       </li>
     </ul>
   </div>
-    <div class="go-top">
-      <svg class="go-top-icon" width="14" height="14">
-        <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#arrow"></use>
-      </svg>
-    </div>
     <main class="main">
       <section class="hero__section section">
   <div class="container hero-container">
@@ -105,7 +104,7 @@
             />
           </picture>
         </div>
-        <a href="" class="hero-btn round-btn">shop now</a>
+        <a href="" class="hero-btn round-btn animate__animated animate__heartBeat animate__repeat-3">shop now</a>
       </div>
       <div class="hero-wrraper-watermelon">
         <p class="hero-text">
@@ -182,7 +181,7 @@
 
     <div class="how-it-works__section-list-container">
       <ul class="how-it-works__section-list">
-        <li class="how-it-works__section-list-item">
+        <li class="how-it-works__section-list-item" data-scroll>
           <div
             class="how-it-works__section-list-item-oval how-it-works__section-first"
           >
@@ -193,7 +192,7 @@
             checkboxes next to it.
           </p>
         </li>
-        <li class="how-it-works__section-list-item">
+        <li class="how-it-works__section-list-item" data-scroll>
           <div
             class="how-it-works__section-list-item-oval how-it-works__section-second"
           >
@@ -203,7 +202,7 @@
             Click on the basket and fill out the form.
           </p>
         </li>
-        <li class="how-it-works__section-list-item">
+        <li class="how-it-works__section-list-item" data-scroll>
           <div
             class="how-it-works__section-list-item-oval how-it-works__section-third"
           >
@@ -222,6 +221,7 @@
       src="/CodeNature_01-project/assets/fruits-564d0096.gif"
       alt="fruits and berries"
       width="860"
+      data-scroll
     />
   </div>
 </section>
@@ -236,7 +236,7 @@
       without the use of harmful pesticides or chemicals.
     </p>
     <ul class="fruits-list">
-      <li class="fruits-item fruits-item-strawberry">
+      <li class="fruits-item fruits-item-strawberry" data-scroll>
         <h3 class="fruits-item-name">Strawberry</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -273,7 +273,7 @@
         </picture>
         <p class="fruits-item-price">100 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-banana">
+      <li class="fruits-item fruits-item-banana" data-scroll>
         <h3 class="fruits-item-name">Banana</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -310,7 +310,7 @@
         </picture>
         <p class="fruits-item-price">80 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-watermelon">
+      <li class="fruits-item fruits-item-watermelon" data-scroll>
         <h3 class="fruits-item-name">Watermelon</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -347,7 +347,7 @@
         </picture>
         <p class="fruits-item-price">40 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-lime">
+      <li class="fruits-item fruits-item-lime" data-scroll>
         <h3 class="fruits-item-name">Lime</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -384,7 +384,7 @@
         </picture>
         <p class="fruits-item-price">60 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-apple">
+      <li class="fruits-item fruits-item-apple" data-scroll>
         <h3 class="fruits-item-name">Apple</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -421,7 +421,7 @@
         </picture>
         <p class="fruits-item-price">50 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-peach">
+      <li class="fruits-item fruits-item-peach" data-scroll>
         <h3 class="fruits-item-name">Peach</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -458,7 +458,7 @@
         </picture>
         <p class="fruits-item-price">80 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-plums">
+      <li class="fruits-item fruits-item-plums" data-scroll>
         <h3 class="fruits-item-name">Plums</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -501,7 +501,7 @@
         </picture>
         <p class="fruits-item-price">40 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-orange">
+      <li class="fruits-item fruits-item-orange" data-scroll>
         <h3 class="fruits-item-name">Orange</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -544,7 +544,7 @@
         </picture>
         <p class="fruits-item-price">60 UAH / kg</p>
       </li>
-      <li class="fruits-item fruits-item-kiwi">
+      <li class="fruits-item fruits-item-kiwi" data-scroll>
         <h3 class="fruits-item-name">Kiwi</h3>
         <p class="fruits-item-plant">Plant</p>
         <picture>
@@ -588,9 +588,9 @@
         <p class="fruits-item-price">90 UAH / kg</p>
       </li>
     </ul>
-    <button class="fruits-btn round-btn" type="button">
+    <button class="fruits-btn round-btn js-open-modal animate__animated animate__heartBeat animate__infinite" type="button" data-modal="2">
       <svg class="fruits-btn-icon" width="14" height="14">
-        <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#arrow"></use>
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#arrow"></use>
       </svg>
       Order
     </button>
@@ -599,8 +599,8 @@
 
       <section class="contacts__section section">
     <div class="container">
-        <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
-        <ul class="contacts-img-wrapper slider-container">
+        <h2 class="contacts-title" data-scroll>Fresh Harvest Box has got you covered</h2>
+        <ul class="contacts-img-wrapper slider-container" data-scroll>
             <li
                 class="contacts-img slide-desktop active"
                 style="background-image: url(/CodeNature_01-project/assets/kiwi-e561aab5.png);">
@@ -622,7 +622,7 @@
                 style="background-image: url(/CodeNature_01-project/assets/strawberry-bb5ad5a4.png);">
             </li>
         </ul>
-        <div id="carouselExampleSlidesOnly" class="contacts-mobile-slider carousel slide" data-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="contacts-mobile-slider carousel slide" data-ride="carousel" data-scroll>
             <ul class="carousel-inner">
               <li class="carousel-item active">
                 <div class="contacts-mobile-slider-img d-block w-100" style="background-image: url(/CodeNature_01-project/assets/kiwi-e561aab5.png);"></div>
@@ -690,7 +690,7 @@
           </picture>
           <a class="footer-logo" href="./index.html">
             <svg class="footer-logo-img" width="16" height="16">
-              <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#logo-icon"></use>
+              <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#logo-icon"></use>
             </svg>
             <span class="footer-logo-text">fresh harvest box</span>
           </a>
@@ -719,7 +719,7 @@
               rel="noreferrer noopener"
             >
               <svg class="footer-socials-img" width="24" height="24">
-                <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#facebook"></use>
+                <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#facebook"></use>
               </svg>
             </a>
           </li>
@@ -731,7 +731,7 @@
               rel="noreferrer noopener"
             >
               <svg class="footer-socials-img" width="24" height="24">
-                <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#instagram"></use>
+                <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#instagram"></use>
               </svg>
             </a>
           </li>
@@ -743,7 +743,7 @@
               rel="noreferrer noopener"
             >
               <svg class="footer-socials-img" width="24" height="24">
-                <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#youtube"></use>
+                <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -766,13 +766,81 @@
 
 
     <!-- Modal windows -->
-    <div class="your-order__modal">
-
+    <div class="modal your-order__modal" data-modal="2">
+    <button class="js-modal-close bnt-modal-close" type="button">
+      <svg class="close-icon" width="24" height="24">
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#close-dark"></use>
+      </svg>
+    </button>
+    <div class="your-order__modal-content">
+        <strong class="your-order__modal-title">Your Order</strong>
+        <form class="your-order__modal-form">
+            <ul class="your-order__modal-cards">
+                <li class="your-order__modal-card">
+                    <div class="your-order__modal-card-checkbox">
+                        <label class="your-order__modal-card-label" for="checkbox-1"></label>
+                        <input name="checkbox-1" type="checkbox" id="checkbox-1">
+                        <svg class="your-order__modal-icon checkbox" width="8" height="8">
+                            <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#checked"></use>
+                        </svg>
+                    </div>
+                    <div class="your-order__modal-card-wrapper">
+                        <strong class="your-order__modal-card-title">Strawberry Basket</strong>
+                        <p class="your-order__modal-card-text">Plant</p>
+                    </div>
+                    <img class="your-order__modal-card-img" src="/CodeNature_01-project/assets/your-order-1-31f7b1d4.png" alt="Strawberry Basket">
+                </li>
+                <li class="your-order__modal-card">
+                    <div class="your-order__modal-card-checkbox">
+                        <label class="your-order__modal-card-label" for="checkbox-2"></label>
+                        <input name="checkbox-2" type="checkbox" id="checkbox-2">
+                        <svg class="your-order__modal-icon checkbox" width="8" height="8">
+                            <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#checked"></use>
+                        </svg>
+                    </div>
+                    <div class="your-order__modal-card-wrapper">
+                        <strong class="your-order__modal-card-title">Apple Basket</strong>
+                        <p class="your-order__modal-card-text">Plant</p>
+                    </div>
+                    <img class="your-order__modal-card-img" src="/CodeNature_01-project/assets/your-order-2-b5f71756.png" alt="Apple Basket">
+                </li>
+                <li class="your-order__modal-card">
+                    <div class="your-order__modal-card-checkbox">
+                        <label class="your-order__modal-card-label" for="checkbox-3"></label>
+                        <input name="checkbox-3" type="checkbox" id="checkbox-3">
+                        <svg class="your-order__modal-icon checkbox" width="8" height="8">
+                            <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#checked"></use>
+                        </svg>
+                    </div>
+                    <div class="your-order__modal-card-wrapper">
+                        <strong class="your-order__modal-card-title">Fruits Basket</strong>
+                        <p class="your-order__modal-card-text">Plant</p>
+                    </div>
+                    <img class="your-order__modal-card-img" src="/CodeNature_01-project/assets/your-order-3-b4931ded.png" alt="Fruits Basket">
+                </li>
+            </ul>
+            <div class="your-order__modal-field">
+                <input placeholder="Enter full name..." type="text" name="user-name" class="your-order__modal-form-input" id="user-name" required>
+            </div>
+            <div class="your-order__modal-field">
+                <input placeholder="Enter email..." type="email" name="user-email" class="your-order__modal-form-input" id="user-email" required>
+            </div>
+            <div class="your-order__modal-field">
+                <input placeholder="Enter card..." type="number" name="user-card" class="your-order__modal-form-input" id="user-card" required size="4">
+            </div>
+            <div class="your-order__modal-field">
+                <textarea placeholder="Enter comments..." name="user-message" class="your-order__modal-form-textarea input-field"  id="user-message" cols="10" rows="7"></textarea>
+            </div>
+            <button class="your-order__modal-form-btn" type="submit">Submit</button>
+        </form>
+    </div>
 </div>
+<div class="overlay js-overlay-modal"></div>
+  
     <div class="modal thank-you-modal" data-modal="1">
   <button class="js-modal-close bnt-modal-close" type="button">
     <svg class="close-icon" width="24" height="24">
-      <use href="/CodeNature_01-project/assets/icons-ee67b564.svg#close-light"></use>
+      <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#close-light"></use>
     </svg>
   </button>
 
@@ -833,6 +901,13 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     
+    <script>
+      ScrollOut({
+          once: true
+          /* options */
+      });
+  </script>
   </body>
 </html>
