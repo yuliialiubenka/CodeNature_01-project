@@ -122,6 +122,9 @@
     .nav {
         margin-right: 322px;
     }
+    .container.header-container {
+        max-width: 1280px;
+    }
 }
 
 /*Mobile Menu*/
