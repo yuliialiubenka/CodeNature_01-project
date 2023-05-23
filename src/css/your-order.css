@@ -84,6 +84,7 @@
 .your-order__modal-card-checkbox input {
     opacity: 0;
     position: absolute;
+    cursor: pointer;
 }
 .your-order__modal-card-checkbox input:checked + .your-order__modal-icon {
     display: block;
