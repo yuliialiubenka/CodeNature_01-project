@@ -20,16 +20,15 @@
       rel="stylesheet"
       href=" https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>CodeNature</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load ="partials/header.html" />
-    <div class="go-top">
-      <svg class="go-top-icon" width="14" height="14">
-        <use href="./img/icons.svg#arrow"></use>
-      </svg>
-    </div>
     <main class="main">
       <load ="partials/hero.html" />
       <load ="partials/how-it-works.html" />
@@ -56,6 +55,13 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script type="module" src="/main.js"></script>
+    <script>
+      ScrollOut({
+          once: true
+          /* options */
+      });
+  </script>
   </body>
 </html>
