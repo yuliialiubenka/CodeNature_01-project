@@ -94,7 +94,11 @@
 
 }
 /*Mobie Styles*/
-
+@media only screen and (min-width: 375px) {
+    .container.header-container {
+        max-width: 100%;
+    }
+}
 @media only screen and (min-width: 320px) {
     .logo {
         margin-right: auto;
@@ -106,6 +110,9 @@
     .nav,
     .header-basket {
         display: block;
+    }
+    .container.header-container {
+        max-width: 100%;
     }
 }
 
