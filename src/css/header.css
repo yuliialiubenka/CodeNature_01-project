@@ -113,17 +113,25 @@
     }
     .container.header-container {
         max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo {
+        margin: 0 0 0 -130px;
+    }
+    .nav {
+        margin-right: 0;
     }
 }
 
 /*Desktop Styles*/
 
 @media only screen and (min-width: 1280px) {
-    .nav {
-        margin-right: 322px;
-    }
     .container.header-container {
         max-width: 1280px;
+    }
+    .header-logo {
+        margin: 0 0 0 -170px;
     }
 }
 
