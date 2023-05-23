@@ -38,7 +38,7 @@
     </symbol>
     <!-- Checked -->
     <symbol id="checked" viewBox="0 0 8 8">
-        <path d="M18 6 6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.538.351a.8.8 0 0 1 1.324.898l-4.339 6.4a.8.8 0 0 1-1.324 0L.138 4.609a.8.8 0 1 1 1.324-.898l1.399 2.063L6.538.351Z" fill="#fff"/>
     </symbol>
   </defs>
 </svg>

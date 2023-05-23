@@ -13,7 +13,6 @@
 @import url('./footer.css');
 @import url('./your-order.css');
 @import url('./thank-you.css');
-@import url('./go-top.css');
 
 :root {
   --black: #000000;
@@ -36,6 +35,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a:focus,
+a:focus-visible, 
+a:active,
+input:focus,
+input:focus-visible, 
+button:active,
+button:focus,
+button:focus-visible, 
+button:active,
+textarea:active,
+textarea:focus, 
+textarea:focus-visible {
+    outline: none;
 }
 
 body {
@@ -116,4 +130,16 @@ h2 {
   .container {
     max-width: 1280px;
   }
+}
+
+[data-scroll] {
+  transition: all 1s ease-in-out;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(40px);
 }
