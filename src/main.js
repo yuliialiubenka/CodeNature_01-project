@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
+    const menuLinks = document.querySelectorAll('.mobile-link');
     const body = document.querySelector('body');
   
     const toggleMenu = () => {
@@ -50,6 +51,13 @@ window.addEventListener('DOMContentLoaded', () => {
         openMenuBtn.style.display = '';
         closeMenuBtn.style.display = '';
     }
+    menuLinks.forEach(function(item){
+        item.addEventListener('click', function() {
+            mobileMenu.classList.remove('is-open');
+            body.classList.toggle('overflow-hidden');
+            hideBothBtn();
+        });
+    });
     openMenuBtn.addEventListener('click', () => showCloseBtn());
     closeMenuBtn.addEventListener('click', () => hideCloseBtn());
 
@@ -65,19 +73,27 @@ window.addEventListener('DOMContentLoaded', () => {
     // Modals
     var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
-       closeButtons = document.querySelectorAll('.js-modal-close');
-
+       closeButtons = document.querySelectorAll('.js-modal-close'),
+       input = document.querySelector('.contacts-form-input'),
+       contactsBtn = document.querySelector('.contacts-form-btn'),
+       modalThankYou = document.querySelector('.thank-you-modal');
+       
     modalButtons.forEach(function(item){
-
         item.addEventListener('click', function(e) {
             e.preventDefault();
             var modalId = this.getAttribute('data-modal'),
             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
             modalElem.classList.add('active');
             overlay.classList.add('active');
-      });
+        });
     });
 
+    contactsBtn.addEventListener('click', function() {
+        if (input.value !== "" && input.style.borderColor !== 'red') {
+            modalThankYou.classList.add('active');
+            overlay.classList.add('active');
+        }
+    });
     closeButtons.forEach(function(item){
 
         item.addEventListener('click', function(e) {

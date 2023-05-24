@@ -67,7 +67,7 @@
 
 .contacts-form-input {
     background: transparent;
-    border:1px solid rgba(255, 255, 255, 0.3) ;
+    border:1px solid rgba(255, 255, 255, 0.3);
     border-radius: 100px;
     color: var(--white);
     padding: 15px 110px 15px 24px;
@@ -75,7 +75,12 @@
     width: 292px;
     line-height: inherit;
 }
-
+.contacts-form-input:required {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.contacts-form-input:required:invalid:focus {
+    border-color: red;
+}
 .contacts-form-input::placeholder {
     opacity: 0.5;
 }

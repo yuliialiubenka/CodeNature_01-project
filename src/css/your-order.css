@@ -43,6 +43,7 @@
   border-radius: 20px;
   padding: 20px;
   min-width: 300px;
+  height: auto;
 }
 .your-order__modal-title {
   font-weight: 500;
@@ -161,6 +162,9 @@
 }
 .your-order__modal-form-input::placeholder {
   opacity: 0.5;
+}
+.your-order__modal-form-input:required:invalid:focus {
+  border-color: red;
 }
 .your-order__modal-form-input:focus {
   border-color: var(--light-green);
