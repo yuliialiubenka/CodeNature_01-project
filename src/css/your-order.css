@@ -100,6 +100,9 @@
 }
 .your-order__modal-card-label {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .your-order__modal-card-checkbox input {
   opacity: 0;
@@ -250,9 +253,12 @@ input[type='number']:focus {
     max-height: 100%;
   }
   .your-order__modal-card {
-    flex-direction: column;
     flex-basis: calc((100% - 24px) / 3);
     padding: 40px 14px;
+  }
+  .your-order__modal-card-label {
+    flex-direction: column;
+    width: auto;
   }
   .your-order__modal-card-wrapper {
     padding-left: 6px;
