@@ -26,8 +26,8 @@
     />
     <title>CodeNature</title>
     
-    <script type="module" crossorigin src="/CodeNature_01-project/assets/index-8b59da00.js"></script>
-    <link rel="stylesheet" href="/CodeNature_01-project/assets/index-52c720c6.css">
+    <script type="module" crossorigin src="/CodeNature_01-project/assets/index-4a20d14f.js"></script>
+    <link rel="stylesheet" href="/CodeNature_01-project/assets/index-8c00c850.css">
   </head>
   <body>
     <header class="header">
@@ -68,16 +68,15 @@
   <!--Mobile Menu-->
   <div class="menu-container js-menu-container" id="mobile-menu">
     <ul class="mobile-menu list">
-      <li><a href="#" class="mobile-link link">How It Works</a></li>
-      <li><a href="#" class="mobile-link link">Fruits</a></li>
-      <li><a href="#" class="mobile-link link">Contacts</a></li>
-      <li><button class="mobile-basket" data-modal-open type="button">
-            <svg class="mobile-basket-icon" width="28" height="28">
-              <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#basket"></use>
-            </svg>
-          </button>
-      </li>
+      <li><a href="#how-it-works__section" class="mobile-link link">How It Works</a></li>
+      <li><a href="#fruits__section" class="mobile-link link">Fruits</a></li>
+      <li><a href="#contacts__section" class="mobile-link link">Contacts</a></li>
     </ul>
+    <button class="mobile-basket js-close-menu" data-modal-open type="button">
+      <svg class="mobile-basket-icon" width="28" height="28">
+        <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#basket"></use>
+      </svg>
+    </button>
   </div>
     <main class="main">
       <section class="hero__section section">
@@ -642,10 +641,9 @@
         </div>
         <div class="contacts-form-wrapper">
             <p class="contacts-form-info">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-            <form action="" class="contacts-form">
-                <input class="contacts-form-input" type="email" name="email" placeholder="Enter email..."
-                aria-label="email" pattern="email">
-                <button type="submit" class="contacts-form-btn js-open-modal" data-modal="1">Send</button>
+            <form action="#" class="contacts-form">
+                <input required class="contacts-form-input" type="text" minlength="5" name="email" placeholder="Enter email..." pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                <button type="submit" class="contacts-form-btn">Send</button>
             </form>
         </div>
         <div>
@@ -697,13 +695,13 @@
 
         <ul class="footer-nav">
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#">How It Works</a>
+            <a class="footer-nav-link" href="#how-it-works__section">How It Works</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#">Fruits</a>
+            <a class="footer-nav-link" href="#fruits__section">Fruits</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#">Contacts</a>
+            <a class="footer-nav-link" href="#contacts__section">Contacts</a>
           </li>
         </ul>
       </div>
@@ -848,8 +846,7 @@
           name="user-name"
           class="your-order__modal-form-input"
           id="user-name"
-			 minlength="2"
-			 pattern="[A-Za-z]{1,32}"
+			    minlength="2"
           required
         />
       </div>
@@ -892,7 +889,7 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
-    <div class="modal thank-you-modal" data-modal="1">
+    <div class="modal thank-you-modal">
   <button class="js-modal-close bnt-modal-close" type="button">
     <svg class="close-icon" width="24" height="24">
       <use href="/CodeNature_01-project/assets/icons-d0755d19.svg#close-light"></use>
