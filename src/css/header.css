@@ -145,11 +145,6 @@
     background-color: transparent;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-    color: var(--light-green);
-}
-
 .menu-toggle-icon {
     fill: currentColor;
 }
@@ -170,9 +165,14 @@
     left: 0;
     width: 100vw;
     height: calc(100vh - 50px);
-    padding: 32px;
+    padding: 120px 0;
     background-color: var(--dark-red);
     z-index: 999;
+
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    gap: 16px;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -200,25 +200,6 @@
     padding: 10px;
     color: var(--white);
     text-decoration: none;
-}
-
-.mobile-top {
-    position: absolute;
-    padding-left: 20px;
-    padding-right: 20px;
-    top: 0;
-    left: 0;
-    background-color: var(--white);
-    height: 50px;
-    width: 100vw;
-}
-
-.mobile-menu {
-    margin-top: 124px;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    gap: 16px;
 }
 
 .mobile-basket {
