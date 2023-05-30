@@ -72,11 +72,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Modals
     var modalButtons = document.querySelectorAll('.js-open-modal'),
-       overlay      = document.querySelector('.js-overlay-modal'),
-       closeButtons = document.querySelectorAll('.js-modal-close'),
-       input = document.querySelector('.contacts-form-input'),
-       contactsBtn = document.querySelector('.contacts-form-btn'),
-       modalThankYou = document.querySelector('.thank-you-modal');
+        overlay      = document.querySelector('.js-overlay-modal'),
+        closeButtons = document.querySelectorAll('.js-modal-close');
        
     modalButtons.forEach(function(item){
         item.addEventListener('click', function(e) {
@@ -88,12 +85,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    contactsBtn.addEventListener('click', function() {
-        if (input.value !== "" && input.style.borderColor !== 'red') {
-            modalThankYou.classList.add('active');
-            overlay.classList.add('active');
-        }
-    });
     closeButtons.forEach(function(item){
 
         item.addEventListener('click', function(e) {
@@ -117,7 +108,3 @@ window.addEventListener('DOMContentLoaded', () => {
         this.classList.remove('active');
     });
 });
-
-
-
-

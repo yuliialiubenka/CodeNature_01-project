@@ -15,24 +15,17 @@
   opacity: 0;
   visibility: hidden;
   display: block;
-  width: 335px;
 }
-@media only screen and (min-width: 768px) {
-  .modal {
-    width: 704px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .modal {
-    width: 891px;
-  }
+.your-order__modal {
+  height: unset;
+  width: unset;
+  max-height: 95vh;
 }
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
-
 .your-order__modal {
   position: fixed;
   top: 50%;
@@ -43,7 +36,6 @@
   border-radius: 20px;
   padding: 20px;
   min-width: 300px;
-  height: auto;
 }
 .close-icon:hover path,
 .close-icon:focus path {
@@ -229,7 +221,8 @@ input[type='number']:focus {
 
 @media only screen and (min-width: 375px) {
   .your-order__modal {
-    min-width: 375px;
+    max-width: 375px;
+    width: 335px;
   }
 }
 
@@ -295,6 +288,7 @@ input[type='number']:focus {
   .your-order__modal {
     min-width: 891px;
     background-position-x: right;
+    overflow-y: auto;
   }
   .your-order__modal-cards {
     gap: 20px;

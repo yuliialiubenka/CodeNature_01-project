@@ -81,13 +81,28 @@
 .contacts-form-input:required:invalid:focus {
     border-color: red;
 }
+.contacts-form-input:required:invalid + .contacts-btn-cover {
+    display: block; 
+}
+.contacts-btn-cover {
+    display: none;
+    position: absolute;
+    width: 105px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 111;
+}
 .contacts-form-input::placeholder {
     opacity: 0.5;
+    color: var(--white);
 }
 .contacts-form-btn {
     position: absolute;
+    top: 0;
     right: 0;
     padding: 15px 35px;
+    height: 100%;
     background-color: var(--light-green);
     border-radius: 100px;
     color: var(--white);
